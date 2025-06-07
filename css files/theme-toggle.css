@@ -1,0 +1,31 @@
+/* /* /* :root{
+    --bg-light: #ffffff;
+    --text-light: #000000;
+    --bg-dark: #121212;
+    --text-dark: #ffffff;
+}
+.theme-toggle img{
+    height: 40px;
+}
+body.light{
+    background-color: var(--bg-light) !important;
+    color: var(--text-light) !important;
+}
+body.dark{
+    background-color: var(--bg-dark) !important;
+    color: var(--text-dark) !important;
+}
+.theme-toggle{
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}*//*
+.theme-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-png:active{
+    transform: rotate(180deg); */
