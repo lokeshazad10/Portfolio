@@ -12,15 +12,15 @@
 
     <!-- css file -->
      <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./css files/floating.css">
      <!-- <link rel="stylesheet" href="./css files/theme-toggle.css"> -->
-
-
-
+    <link rel="stylesheet" href="./css files/responsive.css">
 </head>
 <body>
     <div id="main-box">
+        
         <header id="header">
-            <a href="./index.html" class="nav-logo" data-text="Lokesh Azad"> <img src="./assets/favicon.ico" alt="logo"> Lokesh Azad</a>
+            <a href="./index.html" class="nav-logo dis-none" data-text="Lokesh Azad"> <img src="./assets/favicon.ico" alt="logo"> Lokesh Azad</a>
             <nav id="navbar">
                 <ul>
                     <li class="nav-list">
@@ -55,17 +55,11 @@
                     </li>
                 </ul>
             </nav>
-                <!-- <div class="toggle-theme nav-logo">
-                    <button class="theme-toggle" id="toggleTheme">
-                         <img src="./assets/moon.png" alt="Theme toggle" id="theme-png"> 
-                         click
-                    </button>
-                </div> -->
                 <div class="switch-wrapper">
                     <label class="switch">
                     <input type="checkbox" id="themeSwitch">
                     <span class="slider"></span>
-                     </label>
+                    </label>
                  </div>
         </header>
         <main class="main">
@@ -83,11 +77,11 @@
                             <p class="home-desc">
                                 I'm a creative developer based in Bhatapara C.G., and I'm very passionate and dedicated to my work.
                             </p>
-                            <a href="" class="hello-btn">Say Hello <i class="fa-solid fa-paper-plane"></i></a>
+                            <button onclick="sendMessage()" class="hello-btn">Say Hello <i class="fa-solid fa-paper-plane"></i></button>
                         </div>
                         <div class="home-wrapper">
                             <div class="home-image">
-                                <img src="./assets/home-profile.jpg" alt="Profile Picture" width="300px">
+                                <img src="./assets/home-profile.png" alt="Profile Picture" width="300px">
                             </div>
                         </div>
                     </div>
@@ -142,28 +136,28 @@
                         <div class="skills-box">
                             <div class="skills-group">
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-html5"></i>
+                                    <img src="./assets/icons/HTML5.svg" alt="html icon">
                                     <div>
                                         <h3 class="skill-name">HTML</h3>
                                         <span class="skill-level">Basic</span>
                                     </div>
                                 </div>
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-css"></i>
+                                    <img src="./assets/icons/CSS3.svg" alt="css icon">
                                     <div>
                                         <h3 class="skill-name">CSS</h3>
                                         <span class="skill-level">Advanced</span>
                                     </div>
                                 </div>
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-js"></i>
+                                    <img src="./assets/icons/JavaScript.svg" alt="javascript icon">
                                     <div>
                                         <h3 class="skill-name">JavaScript</h3>
                                         <span class="skill-level">Intermediate</span>
                                     </div>
                                 </div>
                                 <div class="skill-data">
-                                    <i class="fa-solid fa-database"></i>
+                                    <img src="./assets/icons/MySQL.svg" alt="MySQL icon">
                                     <div>
                                         <h3 class="skill-name">MySQL</h3>
                                         <span class="skill-level">Basic</span>
@@ -173,28 +167,28 @@
                             </div>
                             <div class="skills-group">
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <img src="./assets/icons/Bootstrap.svg" alt="bootstrap icon">
                                     <div>
                                         <h3 class="skill-name">BootStrap</h3>
                                         <span class="skill-level">Basic</span>
                                     </div>
                                 </div>
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-html5"></i>
+                                    <img src="./assets/icons/Tailwind CSS.svg" alt="tailwind icon">
                                     <div>
                                         <h3 class="skill-name">Tailwind</h3>
                                         <span class="skill-level">Basic</span>
                                     </div>
                                 </div>
-                                <div class="skill-data">
-                                    <i class="fa-brands fa-git-alt"></i>
+                                <!-- <div class="skill-data">
+                                    <img src="./assets/icons/Git.svg" alt="git icon">
                                     <div>
                                         <h3 class="skill-name">Git</h3>
                                         <span class="skill-level">Basic</span>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-react"></i>
+                                    <img src="./assets/icons/React.svg" alt="react icon">
                                     <div>
                                         <h3 class="skill-name">React</h3>
                                         <span class="skill-level">Basic</span>
@@ -208,14 +202,21 @@
                         <div class="skills-box">
                             <div class="skills-group">
                                 <div class="skill-data">
-                                    <i class="fa-solid fa-code"></i>
+                                    <img src="./assets/icons/Visual Studio Code (VS Code).svg" alt="vscode icon">
                                     <div>
-                                        <h3 class="skill-name">React</h3>
+                                        <h3 class="skill-name">VS Code</h3>
+                                        <span class="skill-level">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-data">
+                                    <img src="./assets/icons/Git.svg" alt="git icon">
+                                    <div>
+                                        <h3 class="skill-name">Git</h3>
                                         <span class="skill-level">Basic</span>
                                     </div>
                                 </div>
                                 <div class="skill-data">
-                                    <i class="fa-solid fa-code"></i>
+                                    <img src="./assets/icons/C++ (CPlusPlus).svg" alt="c++ icon">
                                     <div>
                                         <h3 class="skill-name">C++</h3>
                                         <span class="skill-level">Basic</span>
@@ -224,7 +225,7 @@
                             </div>
                             <div class="skills-group">
                                 <div class="skill-data">
-                                    <i class="fa-brands fa-github"></i>
+                                    <img src="./assets/icons/GitHub.svg" alt="github icon">
                                     <div>
                                         <h3 class="skill-name">Github</h3>
                                         <span class="skill-level">Basic</span>
@@ -383,5 +384,6 @@
    })();
 </script>
 <script src="./js files/emailsender.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

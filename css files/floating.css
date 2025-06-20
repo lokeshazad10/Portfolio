@@ -1,0 +1,20 @@
+.home-image {
+  /* width: 250px;
+  height: 250px; */
+  background: linear-gradient(135deg, #ffa600, #ff6600);
+  z-index: 1;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morph 8s ease-in-out infinite;
+}
+/* Morphing animation */
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}

@@ -34,6 +34,7 @@ html, body {
    /* transition: all 0.3s ease, color 0.3s ease; */
    font-size: 1rem;
    overflow-x: hidden;
+   overflow-y: auto;
    background-color: var(--bg-color);
    scroll-behavior: smooth;
 }
@@ -207,14 +208,19 @@ section{
     margin: 0px auto;
 }
 .home-social{
-    display: grid;
-    grid-template-columns: max-content;
+    display: flex;
+    flex-direction: column;
     row-gap: 1rem;
     position: relative;
     z-index: 10;
     margin-left: 150px;
+    width: max-content;
 }
 .home-social a{
+    height: 45px;
+    width: 45px;
+    max-height: 45px;
+    max-width: 45px;
     padding: 10px;
     background-color: rgb(255, 87, 87);
     border-radius: 50%;
@@ -240,6 +246,10 @@ section{
     background-color: aliceblue;
 }
 .home-social span{
+    height: 45px;
+    width: 45px;
+    max-height: 45px;
+    max-width: 45px;
     background-color: aliceblue;
     border-radius: 50%;
 }
@@ -295,23 +305,34 @@ section{
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
 .hello-btn:hover{
     color: var(--btn-bg);
     background-color: var(--btn-text);
 }
 .home-wrapper{
-    /* margin-left: 50px; */
-    padding: 0 25px;
+    margin: 0 auto;
+    /* padding: 0 25px; */
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home-image{
-    width: 300px;
-    height: 300px;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.home-image img{
+    max-width: 200px;
 }
 .section-title{
     text-align: center;
@@ -399,6 +420,9 @@ section{
     column-gap: 0.5rem;
     color: var(--main-text-color);
 }
+.skill-data img{
+    height: 1.5rem;
+}
 .skill-name{
     line-height: 14px;
     font-size: 1rem;
@@ -410,7 +434,7 @@ section{
 }
 
 .qualification-container{
-    margin: 0 64px;
+    margin: 0 65px;
 }
 .qualification-tab{
     display: flex;
@@ -478,7 +502,7 @@ section{
     text-align: center;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: var(--border-color);
     border-image: initial;
     border-radius: 0.75rem;
     padding: 1rem 1.25rem;
@@ -678,3 +702,4 @@ section{
     background-color: #ffffff;
     border-radius: 50%;
 }
+
