@@ -380,7 +380,7 @@ section{
     background-color: var(--card-color);
 }
 .work-img{
-    width: 295px;
+    width: 16rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
