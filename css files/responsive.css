@@ -130,4 +130,40 @@
     .contact-form{
         width: auto;
     }
+    .footer-container{
+        padding-bottom: 5rem;
+    }
+}
+
+/* breakpoint 920 */
+@media (min-width: 900px) and (max-width: 920px){
+    .about-container{
+        margin: 0 2rem;
+    }
+    .home-social{margin-left: 100px;}
+    .home-data{margin-left: 70px;}
+}
+@media (min-width: 481px)  and (max-width: 900px){
+    .logo-text{
+        display: none;
+    }
+    .about-container{
+        /* grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+        row-gap: 2.5rem; */
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        margin: 0 1.5rem;
+        text-align: center;
+    }
+    .about-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-description{
+        padding: 0 5rem;
+    }
 }
