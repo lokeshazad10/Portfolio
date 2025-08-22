@@ -378,6 +378,12 @@ section{
     border-radius: 1rem;
     padding: 1.25rem;
     background-color: var(--card-color);
+    height: 23rem;
+}
+.project-details{
+    position: absolute;
+    bottom: 1rem;
+    width: 85%;
 }
 .work-img{
     width: 16rem;
@@ -394,6 +400,11 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.work-link a:hover{
+    transition: all ease-in-out 0.1s;
+    transform: scale(1.2);
+    color: #ff5757;
 }
 .work-link a{
     color: var(--secondary-text-color);
