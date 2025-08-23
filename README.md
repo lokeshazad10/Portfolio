@@ -18,8 +18,8 @@ This is a responsive and interactive personal portfolio website built using **HT
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Email Service**: EmailJS
-- **Icons**: Font Awesome
+- **Frontend**: HTML, CSS, JavaScript.
+- **Email Service**: EmailJS.
+- **Icons**: Font Awesome.
 
 ---
