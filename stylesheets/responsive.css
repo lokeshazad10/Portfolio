@@ -66,7 +66,7 @@
     }
     .home-social { 
         grid-area: div1;
-        margin-left: 60px;
+        margin-left: 100px;
      }
     .home-data { 
         grid-area: div2; 
@@ -78,6 +78,15 @@
         grid-area: div3; 
         position: relative;
         left: -60px;
+    }
+    .home-image{
+        width: vw;
+    }
+    .home-image img{
+        padding-top: 100px;
+        transform: scale(2);
+        padding-right: 35px;
+        width: 80%;
     }
     .home-tittle{
         margin: 0 20px;

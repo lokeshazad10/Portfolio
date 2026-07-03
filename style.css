@@ -332,24 +332,23 @@ section{
 .home-wrapper{
     margin: 0 auto;
     /* padding: 0 25px; */
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .home-image{
     width: 100%;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
 }
 .home-image img{
-    max-width: 200px;
+    padding-top: 165px;
+    transform: scale(2);
+    padding-right: 35px;
+    width: 300px;
 }
 .section-title{
     text-align: center;
